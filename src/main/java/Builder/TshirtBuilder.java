@@ -5,14 +5,15 @@ public class TshirtBuilder {
 
     public TshirtBuilder setMaterial(String material) {
         if (material == null || material.isEmpty()) {
-            tshirt.setMaterial(material);
+            throw new IllegalArgumentException("Material is missing");
         }
         tshirt.setMaterial(material);
         return this;
     }
+
     public TshirtBuilder setSize(String size) {
         if (size == null || size.isEmpty()) {
-            tshirt.setSize(size);
+            throw new IllegalArgumentException("Size is missing");
         }
         tshirt.setSize(size);
         return this;
@@ -20,7 +21,7 @@ public class TshirtBuilder {
 
     public TshirtBuilder setColor(String color) {
         if (color == null || color.isEmpty()) {
-            tshirt.setColor(color);
+            throw new IllegalArgumentException("Color is missing");
         }
         tshirt.setColor(color);
         return this;

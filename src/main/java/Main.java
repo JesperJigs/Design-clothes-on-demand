@@ -1,5 +1,3 @@
-import Builder.Pants;
-import Builder.PantsBuilder;
 import BusinessObject.CEO;
 import BusinessObject.Customer;
 import Controller.OrderProcess;
